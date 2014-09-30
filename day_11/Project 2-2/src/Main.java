@@ -6,9 +6,9 @@ public class Main {
         line();
 
         for (int i = 1; i <= 2; i++) {
-            System.out.println("|  ^^  |");
-            System.out.println("| ^  ^ |");
-            System.out.println("|^    ^|");
+            System.out.println("|  ^" + "^  |");
+            System.out.println("| ^ " + " ^ |");
+            System.out.println("|^  " + "  ^|");
         }
 
 
