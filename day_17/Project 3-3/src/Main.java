@@ -5,12 +5,12 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(" Day | Presents Received Today | Total Presents");
         System.out.println("-----+-------------------------+---------------");
-//      System.out.println(" 1   | 1                       | 1");
+//      System.out.println(" 1   | 1                       | 1             ");
 
         int total = 0;
 
         // count down the days
-        for (int day = 12; day >= 1; day--) {
+        for (int day = 1; day <= 12; day++) {
             total += day;
             System.out.print(' ');
 
