@@ -57,22 +57,19 @@ public class Main {
                 g.drawString("JAVA", x + 12, y + 42);
                 break;
             case BOXES:
-                // from the top, going down
-                for (int i=0; i < 5; i++)
+                for (int i=0; i < 5; i++) {
+                    // from the top, going down
                     g.drawRect(x + (5 * i), y + (5 * i), 5, 45 - (10 * i));
 
-                // from the left
-                for (int i=0; i < 5; i++)
+                    // from the left
                     g.drawRect(x + (5 * (i + 1)), y + (5 * i), 45 - (10 * i), 5);
 
-                // from the bottom
-                for (int i=0; i < 5; i++)
+                    // from the bottom
                     g.drawRect(x + (5 * i), y + (45 - (5 * i)), 45 - (10 * i), 5);
 
-                // from the right
-                for (int i=0; i < 5; i++)
+                    // from the right
                     g.drawRect(x + (45 - (5 * i)), y + (5 * (i + 1)), 5, 45 - (10 * i));
-
+                }
                 break;
         }
 
