@@ -44,11 +44,11 @@ public class Main {
             case EYES:
                 // left eye
                 g.drawOval(x + 5, y + 10, 15, 30);
-                g.fillOval(x + 5, y + 18, 15, 15);
+                g.fillOval(x + 5, y + 22, 15, 15);
 
                 // right eye
                 g.drawOval(x + 30, y + 10, 15, 30);
-                g.fillOval(x + 30, y + 18, 15, 15);
+                g.fillOval(x + 30, y + 22, 15, 15);
                 break;
             case TEXT:
                 g.setFont(new Font("Inconsolata", Font.PLAIN, 14));
