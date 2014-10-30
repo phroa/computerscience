@@ -13,6 +13,7 @@ import static data.Colors.*;
  */
 public class Main {
     public static void main(String[] args) {
+        // make a new panel
         DrawingPanel p = new DrawingPanel(200, 200);
         Graphics g = p.getGraphics();
 
@@ -40,6 +41,7 @@ public class Main {
         // object border
         g.drawRect(x, y, 50, 50);
 
+        // what object are we drawing?
         switch (obj) {
             case EYES:
                 // left eye
