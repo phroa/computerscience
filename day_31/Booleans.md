@@ -1,0 +1,12 @@
+1. `true`
+2. `true`
+3. `false`
+4. `true`
+5. `true`
+6. `false`
+7. `false`
+8. `true`
+9. `true`
+10. `true`
+11. `true`
+12. `false`
