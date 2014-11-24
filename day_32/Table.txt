@@ -1,0 +1,6 @@
+  y < x   y == 0  count > 0
+A   S       S         N
+B   A       S         S
+C   A       A         A
+D   S       S         S
+E   N       S         S
