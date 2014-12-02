@@ -7,8 +7,10 @@ public class FileSum {
     double sum = 0;
     for (int i = 1; i <= 5; i++) {
       double n = in.nextDouble();
-      System.out.println("number " + i + " = " + in.nextDouble());
+      System.out.println("number " + i + " = " + n);
       sum += n;
     }
+
+    System.out.println("sum = " + sum);
   }
 }
