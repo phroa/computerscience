@@ -1,0 +1,11 @@
+- "client program"
+  - program that uses objects
+  - e.g. `Bomb` is a client of `DrawingPanel` and `Graphics`
+- objects have state and behavior
+  - state being bits of data
+  - behavior is/are things it can do
+- abstraction
+  - Distance between ideas and details
+- field
+  - Variable inside an object, part of its state
+- Other classes can modifu an object's fields
