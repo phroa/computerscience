@@ -28,7 +28,7 @@ public final class Point {
   public void draw(Graphics graphics, boolean label) {
     graphics.fillRect(x, y, 3, 3);
     if (label) {
-      graphics.drawString("(" + x + ", " + y + ")", x, y - 5);
+      graphics.drawString(toString(), x, y - 5);
     }
   }
 

@@ -1,11 +1,22 @@
-- "client program"
+- `client program`
   - program that uses objects
   - e.g. `Bomb` is a client of `DrawingPanel` and `Graphics`
 - objects have state and behavior
   - state being bits of data
   - behavior is/are things it can do
-- abstraction
+- `abstraction`
   - Distance between ideas and details
-- field
+- `field`
   - Variable inside an object, part of its state
 - Other classes can modifu an object's fields
+- `implicit parameter`
+  - instance methods know what the appropriate data to change and view is and they don't mess with other instances' data.
+- `instance method`
+  - `mutator`
+    - changes that instance's data
+  - `accessor`
+    - accesses that instance's data
+- `constructor`
+  - establish default values for a new instance when you create it
+- `this`
+  - references the current instance of an object
