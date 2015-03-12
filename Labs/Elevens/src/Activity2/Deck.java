@@ -11,12 +11,14 @@ public class Deck {
 
     public Deck(ArrayList<String> ranks, ArrayList<String> suits, ArrayList<Integer> values) {
 
+        if (ranks.size() == 0 || suits.size() == 0 || values.size() == 0)
+            throw new IllegalArgumentException("Can't make a deck from nothing");
+
         ArrayList<Card> temp = new ArrayList<Card>();
 
-        for (int i = 0; i < Math.max(ranks.size(), Math.max(suits.size(), values.size())); i++) {
+        for (int i = 0; i < Math.max(ranks.size(), values.size()); i++) {
 
             String currentRank;
-            String currentSuit;
             int currentValue;
 
             try {
@@ -26,18 +28,13 @@ public class Deck {
             }
 
             try {
-                currentSuit = suits.get(i);
-            } catch (IndexOutOfBoundsException ex) {
-                currentSuit = suits.get(suits.size() - 1);
-            }
-
-            try {
                 currentValue = values.get(i);
             } catch (IndexOutOfBoundsException ex) {
                 currentValue = values.get(values.size() - 1);
             }
 
-            temp.add(new Card(currentSuit, currentRank, currentValue));
+            for (String suit : suits)
+                temp.add(new Card(suit, currentRank, currentValue));
         }
 
         this.cards = temp;
